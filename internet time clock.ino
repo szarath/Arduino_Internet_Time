@@ -41,6 +41,7 @@ Serial.begin(9600);
   lcd.print(Date);
 
  // esWiFi.joinAP(ssid, password);
+  esWifi.init();
   Serial.print("Connecting to");
   esWiFi.joinAP(ssid, password);
   while (!esWiFi.getAPIp()) {
